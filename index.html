@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Abby Kelly</title>
+</head>
+<body>
+
+  <!-- Navbar from bootstrap-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TaCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- p-3 pt-5 -->
+  <!-- Jumbotron from bootstrap -->
+  <section class="header">
+    <div class="jumbotron p-5">
+      <div class="title">
+        <h1 class="display-5 pt-5 fw-bold text-center">Abby Kelly</h1>
+        <p class="pt-3 pb-5 fs-3 text-center">Junior Developer</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- quotes triangle z-index: 1 add the code below position: absolute-->
+<div class="quoteTab">
+  
+</div>
+
+
+<!--carousel from bootstrap  -->
+<div class="quotes">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="slide1">
+        <p>"Here is going to be a quote from someone I've worked with about what it's like to work with me."</p>
+      </div>
+      <div class="carousel-item" id="slide2">Another quote about me being aweomse!</div>
+      <div class="carousel-item" id="slide3">Last quote about me!</div>
+    </div>
+  </div>
+</div>
+
+<!-- about me section -->
+<div class="aboutMe">
+  <div class="aboutMe2">
+    <h2>This section is for my skills</h2>
+  </div>
+</div>
+
+
+
+
+<!-- Menu from bootstrap -->
+<section class="projects p-5">
+  <div class="container">
+    <h1 class="text-center pb-3">My Work</h1>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-2">
+        <div class="card">
+          <img src="./portfolio pics/cssCreature.png" class="card-img-top" alt="css cactus">
+          <div class="card-body">
+            <h5 class="card-title">CSS Creature</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-2">
+        <div class="card">
+          <img src="./portfolio pics/CollinsCakery.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Static Store Front</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 pb-2">
+        <div class="card">
+          <img src="https://s.hdnux.com/photos/01/23/74/51/22006376/3/1200x0.jpg
+          " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Burritos</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact form  -->
+<div class="last">
+<div class="about ">
+  <form action="webform.php" method="POST" class="form">
+    <div class="form-group ps-3 pt-3">
+        <input type="text" class="input w-50 rounded" id="name" name="name" placeholder="First & Last Name:" tabindex="1" required>
+    </div>
+    <br>
+
+    <div class="form-group ps-3">
+        <input type="email" class="input w-50 rounded" id="email" name="email" placeholder="Email:" tabindex="2" required>
+    </div>
+    <br>
+
+    <div class="text-area form-group w-50 ps-3">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" tabindex="2" rows="3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, eligendi aut. Deleniti, cumque rerum obcaecati suscipit a harum similique tempora illo earum dolores voluptatibus, est temporibus sed in et voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis ipsa, quidem modi et eum molestiae, omnis molestias deleniti doloremque rerum dolorem veniam, neque id. Sit tenetur accusantium sapiente provident.
+      </textarea>
+    </div>
+
+    <div class="submitBtn w-25 ps-3">
+        <button type="submit" class="connectBtn">Let's Connect!</button>
+    </div>
+</form>
+</div>
+<div class="unknown">
+  <div class="">
+    <h3>need to figure out what to put here</h3>
+  </div>
+</div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
