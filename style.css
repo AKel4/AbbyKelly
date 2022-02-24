@@ -15,6 +15,7 @@ nav a {
   letter-spacing: 1px;
 }
 
+
 .title {
   margin: auto;
   margin-top: 18vh;
@@ -34,19 +35,23 @@ nav a {
 
 
 
-/* .quotes::before {
+.quotes::before {
+  content: '';
+  position: relative;
+  bottom: 23vh;
+  left: 5vw;
+  z-index: 1;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #F8B195;
-  top: 0;
-} */
+  border-left: 6em solid transparent;
+  border-right: 6em solid transparent;
+  border-bottom: 5em solid #F8B195;
+}
 
 
 .quotes {
   padding-top: 15vh;
-  /* height: 50vh; */
+  padding-bottom: 15vh;
   background-color: #F8B195;
 
 }
@@ -57,12 +62,39 @@ nav a {
   padding-top: 0;
 }
 
+.carousel-indicators {
+  bottom: -15vh !important;
+}
+
+.aboutMe::before {
+  content: '';
+  position: relative;
+  bottom: 8vh;
+  left: 20vw;
+  width: 0;
+  height: 0;
+  border-left: 6em solid transparent;
+  border-right: 6em solid transparent;
+  border-bottom: 5em solid #F67280;
+}
+
+
 .aboutMe {
   background-color: #F67280;
   height: 40vh;
 }
 
-
+.projects::before {
+  content: '';
+  position: relative;
+  bottom: 12vh;
+  left: 35vw;
+  width: 0;
+  height: 0;
+  border-left: 6em solid transparent;
+  border-right: 6em solid transparent;
+  border-bottom: 5em solid #C06C84;
+}
 
 .projects {
   background-color: #C06C84;
@@ -76,12 +108,22 @@ nav a {
   
 }
 
+.contact::before {
+  content: '';
+  position: relative;
+  bottom: 8vh;
+  left: 55vw;
+  width: 0;
+  height: 0;
+  border-left: 6em solid transparent;
+  border-right: 6em solid transparent;
+  border-bottom: 5em solid #6C5B7B;
+}
 
-.about {
+.contact {
   background-color: #6C5B7B;
   height: 40vh;
   width: 50%;
-  border: solid 3px #27212c;
   float: left;
 }
 
@@ -115,7 +157,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .unknown {
   background-color: #6C5B7B;
-  border: solid 3px #27212c;
+
   float: right;
   height: 40vh;
   width: 50%;
