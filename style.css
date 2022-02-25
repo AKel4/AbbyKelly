@@ -319,7 +319,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .my-experience {
   float: right;
-  width: 49vw;
+  max-width: 50%;
   height: 90vh;
   position: static;
   background-color: #6C5B7B;
