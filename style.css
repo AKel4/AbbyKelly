@@ -1,22 +1,47 @@
+@font-face {
+  font-family: AgustusMerdeka;
+  src: url(images/aAgustusMerdeka.ttf) ;
+}
+@font-face {
+  font-family: Sometime;
+  src: url(images/Sometime.ttf);
+}
+@font-face {
+  font-family: Project;
+  src: url(images/projectFont.TTF);
+}
+@font-face {
+  font-family: TypeWritting;
+  src: url(images/SmallTypeWriting.ttf);
+}
+
+/*? -------------------------------------NAV BAR---------------------------------------------- */
+
+
 .navbar {
   position: fixed;
   overflow: hidden;
   width: 100%;
   z-index: 1;
 }
-
 .navbar-nav {
   margin-left: auto;
+}
+
+.nav-link a.active {
+  color: aliceblue;
 }
 
 nav a {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
+  color: #8AFF9D !important;
 }
 
 
 .title {
+  font-family: "Sometime", sans-serif;
   margin: auto;
   margin-top: 18vh;
   align-content: center;
@@ -26,15 +51,26 @@ nav a {
   color: white;
 }
 
+.myName {
+  font-size: 80pt !important;
+}
+
+.myTitle {
+  font-size: 40pt !important;
+  letter-spacing: 2px;
+  color: #8AFF9D;
+}
+
 .jumbotron {
   background: fixed;
   background-color: #355C7D;
   background-size: cover;
   height: 70vh;
 }
+/* !---------------------------------------END OF NAVBAR------------------------------------------- */
 
 
-
+/* ?-------------------------------------------QUOTES---------------------------------------------- */
 .quotes::before {
   content: '';
   position: relative;
@@ -50,6 +86,7 @@ nav a {
 
 
 .quotes {
+  position: sticky;
   padding-top: 15vh;
   padding-bottom: 15vh;
   background-color: #F8B195;
@@ -60,13 +97,30 @@ nav a {
   text-align: center;
   padding-bottom: 12vh;
   padding-top: 0;
+  font-family: "TypeWritting";
+  font-size: 30pt;
 }
+
+#slide2 {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+
+#slide3 {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
 
 .carousel-indicators {
   bottom: -15vh !important;
 }
+/*!-----------------------------------------END OF QUOTE------------------------------------------  */
 
-.aboutMe::before {
+
+/*? -----------------------------------------ABOUT ME---------------------------------------------- */
+.skills::before {
   content: '';
   position: relative;
   bottom: 8vh;
@@ -79,11 +133,41 @@ nav a {
 }
 
 
-.aboutMe {
+.skills {
   background-color: #F67280;
   height: 40vh;
 }
 
+
+ul.icon-tab-nav, .icon-tab-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+  ul.icon-tab-nav li, .icon-tab-nav ul li {
+      display: inline-block;
+      width: 200px;
+  }
+
+  .icon-tab-nav a {
+      font-size: 44px;
+      color: #130e16;;
+  }
+
+  .icon-tab-nav .icon-tab-nav-title {
+      margin-top: 10px;
+  }
+
+      .icon-tab-nav a:hover, .icon-tab-nav a:hover .icon-tab-nav-title {
+          color: #382f3f;
+      }
+
+/*! -------------------------------END OF ABOUT ME------------------------------------------ */
+
+
+/*?-------------------------------------PROJECTS--------------------------------------------------- */
 .projects::before {
   content: '';
   position: relative;
@@ -96,10 +180,26 @@ nav a {
   border-bottom: 5em solid #C06C84;
 }
 
-.projects {
-  background-color: #C06C84;
+.lineUnderMyWork {
+  align-content: center;
+  height: 3px !important;
+  position: relative;
 }
 
+.projects {
+  background-color: #C06C84;
+  padding-top: 4.5vh;
+  padding-bottom: 15vh;
+}
+
+.container h1 {
+  font-family: "Project";
+  color: black;
+}
+
+.card-body {
+  background-color: #cfc9ca;
+}
 
 
 .col-2 {
@@ -108,6 +208,10 @@ nav a {
   
 }
 
+/* !------------------------------------END OF PROJECTS-------------------------------------------- */
+
+
+/* ?------------------------------------CONTACT---------------------------------------------------- */
 .contact::before {
   content: '';
   position: relative;
@@ -122,17 +226,18 @@ nav a {
 
 .contact {
   background-color: #6C5B7B;
-  height: 40vh;
+  position: relative;
+  height: 100vh;
   width: 50%;
   float: left;
 }
 
 .input {
-  border-radius: 5px;
+  width: 38vw;
 }
 
 .text-area {
-  width: 52%;
+  width: 39vw;
   border-radius: 15px;
   text-align:center;
   font-size: 1.5rem;
@@ -162,3 +267,112 @@ textarea::-webkit-scrollbar-thumb {
   height: 40vh;
   width: 50%;
 }
+/* !--------------------------------END OF CONTACT------------------------------------------------ */
+
+/*? ----------------BESIDE THE CONTACT FORM ------------------------- */
+
+.my-experience {
+  float: right;
+  width: 49vw;
+  height: 90vh;
+  position: static;
+  background-color: #6C5B7B;
+}
+
+.myExperience {
+  position: static;
+  background-color: #6C5B7B;
+  height: 100vh;
+}
+
+
+
+.experience-box {
+  background-color: #fff;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 5px solid #eee;
+}
+
+.experience-year {
+  background: #222;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+
+.experience-sub-title {
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.experience-content {
+  margin-bottom: 0;
+}
+
+
+
+/*?----------------------------------FOOTER------------------------------------------------------- */
+div.clear {
+  clear: both;
+  font-size: 1%;
+}
+
+.footer {
+ position: relative;
+  width: 100%;
+  height: 15vh;
+  background-color: #355C7D;
+}
+
+.footer .social {
+  list-style: outside none none;
+  padding: 0;
+}
+
+  .footer .social li {
+    padding-top: 3vh;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 8px;
+  }
+
+      .footer .social li a {
+        color: #8AFF9D;
+        border: 1px solid #8AFF9D;
+        display: block;
+        font-size: 14px;
+        height: 30px;
+        line-height: 28px;
+        text-align: center !important;
+        width: 30px;
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+          .footer .social li a i, .footer li a span {
+              transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+          }
+
+          .footer .social li a:hover {
+              background: #8AFF9D none repeat scroll 0 0;
+              color: #fff;
+          }
+
+.copy-link {
+  color: #8AFF9D;
+  text-align: center;
+}
+
