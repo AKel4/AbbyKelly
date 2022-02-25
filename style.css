@@ -157,6 +157,13 @@ nav a {
   height: 60vh;
 }
 
+.skillTitle {
+  font-family: "TypeWritting";
+  font-weight: 300;
+  font-size: 28pt;
+  border-bottom: solid 2px #382f3f;
+}
+
 .myFavicons {
   padding-bottom: 10vh;
 }
@@ -239,7 +246,7 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 .contact::before {
   content: '';
   position: relative;
-  bottom: 7.5vh;
+  bottom: 20vh;
   left: 55vw;
   width: 0;
   height: 0;
@@ -251,13 +258,25 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 .contact {
   background-color: #6C5B7B;
   position: relative;
+  padding-top: 12vh;
   height: 100vh;
   width: 50%;
   float: left;
 }
 
+.contact h3 {
+  font-family: "TypeWritting";
+  font-weight: bolder;
+  font-size: 30pt;
+  padding-left: 5vw;
+}
+
 .input {
   width: 38vw;
+  height: 4vh;
+  font-family: "TypeWritting";
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .text-area {
