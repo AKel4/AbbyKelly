@@ -215,7 +215,7 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 .contact::before {
   content: '';
   position: relative;
-  bottom: 8vh;
+  bottom: 7.5vh;
   left: 55vw;
   width: 0;
   height: 0;
@@ -281,6 +281,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .myExperience {
   position: static;
+  padding-top: 5em;
   background-color: #6C5B7B;
   height: 100vh;
 }
