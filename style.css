@@ -120,10 +120,29 @@ nav a {
 
 
 /*? -----------------------------------------ABOUT ME---------------------------------------------- */
+
+.softSkills {
+  text-align: center;
+  font-family: "TypeWritting";
+  font-size: 25pt;
+}
+  .softSkills h3 {
+    font-weight: bolder;
+  }
+
+
+.skillList {
+  font-family: "TypeWritting";
+  font-size: 18pt;
+  list-style: circle;
+  display: inline;
+  padding-bottom: 1vh;
+}
+
 .skills::before {
   content: '';
   position: relative;
-  bottom: 8vh;
+  bottom: 7.5vh;
   left: 20vw;
   width: 0;
   height: 0;
@@ -135,14 +154,19 @@ nav a {
 
 .skills {
   background-color: #F67280;
-  height: 40vh;
+  height: 60vh;
+}
+
+.myFavicons {
+  padding-bottom: 10vh;
 }
 
 
 ul.icon-tab-nav, .icon-tab-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 8vh 0;
+
   text-align: center;
 }
 
