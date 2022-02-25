@@ -74,7 +74,7 @@ nav a {
 .quotes::before {
   content: '';
   position: relative;
-  bottom: 21vh;
+  bottom: 22vh;
   left: 5vw;
   z-index: 1;
   width: 0;
