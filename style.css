@@ -86,7 +86,7 @@ nav a {
 
 
 .quotes {
-  position: sticky;
+  position: relative;
   padding-top: 15vh;
   padding-bottom: 15vh;
   background-color: #F8B195;
@@ -136,7 +136,8 @@ nav a {
   font-size: 18pt;
   list-style: circle;
   display: inline;
-  padding-bottom: 1vh;
+  position: relative;
+  padding-bottom: 4vh;
 }
 
 .skills::before {
@@ -153,8 +154,9 @@ nav a {
 
 
 .skills {
+  position: relative;
   background-color: #F67280;
-  height: 60vh;
+  height: fit-content;
 }
 
 .skillTitle {
